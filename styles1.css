@@ -1,0 +1,442 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url('./images/header.jpg');
+}
+/* https://townsquare.media/site/812/files/2018/05/asap-rocky-testing.jpg Ik heb dezeafbeelding gephotoshopped zodat het midden wit is.*/
+header {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+}
+
+section:first-of-type a {
+    font-family: bd-micronfont, sans-serif;
+    padding: 15px 25px;
+    font-size: 2em;
+    background-color: #ffe400;
+    border: 5px #222222 dashed;
+    color: #222222;
+    text-decoration: none;
+}
+
+section:first-of-type a:hover {
+    transform: skew(15deg);
+    transition: all 250ms ease;
+}
+
+iframe {
+    border: 0;
+}
+
+/* lettertypes */
+
+h1 {
+    font-family: felt-tip-roman, sans-serif;
+    font-size: 8em;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+
+#flip {
+    animation: flip 10s infinite;
+}
+h2 {
+    font-family: azo-sans-web, sans-serif;
+    font-size: 3em;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    text-align: center;
+}
+
+h3 {
+    font-family: ff-chambers-sans-web, sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+    color: #ffe400;
+}
+
+p {
+    font-family: ff-chambers-sans-web, sans-serif;
+    color: white;
+}
+
+span {
+    font-family: bd-micronfont, sans-serif;
+    color: #ffe400;
+
+}
+
+/* navigatie */
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: rgb(182, 201, 36);
+    height: 100%;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #e8e8e8;
+    padding: 25px 35px;
+}
+
+nav ul li a:hover {
+    color: #ffe400;
+    background-color: #ffffff32;
+    font-family: bd-micronfont, sans-serif;
+    font-size: 1.1em;
+}
+
+nav ul li img {
+    padding: 0 15px
+}
+
+nav ul li img {
+    width: 50px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:800px;
+}
+
+section iframe {
+    width: 80%;
+    height: 80%;
+}
+
+/* hero */
+
+section:first-of-type {
+    background-image: url('./images/banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section:nth-of-type(2) {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* listening to at the moment */
+
+section:nth-of-type(3) {
+    display: flex;
+    background-color: #222222;
+
+
+}
+
+section:nth-of-type(3) div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 600px;
+    padding-top: 20px;
+}
+
+section:nth-of-type(3) div aside  {
+    width: 40%;
+    transform: rotate(-7deg);
+    padding-top: 100px;
+}
+
+section:nth-of-type(3) iframe {
+    width: 50%;
+    height: 80%;
+    border: none;
+    border-radius: 12px;
+    transform: rotate(4deg);
+}
+
+/* asap rocky icon rechtsonderin fixed */
+
+.fixed {
+    position: fixed;
+    width: 200px;
+    bottom: 3%;
+    right: 2%;
+    mix-blend-mode: difference;
+    transition: all 250ms ease;
+    animation: rondje 20s infinite;
+}
+
+.fixed:hover {
+    position: fixed;
+    left: 2%;
+}
+
+/* nieuws */
+
+section:last-of-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height:20%;
+}
+
+.container {
+    display: flex;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ffe400;
+    border: 5px #222222 dashed;
+    border-radius: 5px;
+    margin: 25px;
+    padding: 10px 5px;
+
+}
+
+.card p {
+    color: #222222;
+    font-weight: 700;
+    text-align: center;
+}
+.card a {
+    text-decoration: none;
+}
+
+.card img {
+    width: 100%;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+
+
+.card:hover {
+    opacity: 0.7;
+    border-radius: 5px;
+    transform: scale(1.05);
+    transition: all 250ms ease;
+}
+
+footer {
+    padding: 15px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #222222;
+}
+
+.fa {
+    padding: 20px 40px;
+    font-size: 4em;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    background: #ffe400;
+
+    color: #222222;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    border: 3px #222222 dashed;
+    transition: all 250ms ease;
+}
+
+/* music page */
+
+main {
+z-index: -2;
+    display: flex;
+    justify-content: center;
+    gap:15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+main h2{
+display: flex;
+}
+main img {
+    width: 500px;
+}
+
+main img:hover{
+transform: scale(1.02);
+transition: all 250ms ease;
+border: 2px #ffe400 dashed;
+}
+    
+main .spinLB {
+        width: 475px;
+        position: absolute;
+        z-index: -1;
+        top: 80px;
+        left:150px;
+        border:none;
+        animation: LP1 5s ease;
+    }
+
+main .spinLO{
+    width: 475px;
+    position: absolute;
+    z-index: -2;
+    bottom: -210px;
+    left: 150px;
+    border:none;
+    animation: LP2 5s ease;
+    animation-delay: 5s;
+}
+
+main .spinRB {
+    width: 475px;
+    position: absolute;
+    z-index: -3;
+    top: 80px;
+    right:150px;
+    border:none;
+    animation: LP3 5s ease;
+    animation-delay: 10s;
+}
+
+main .spinRO{
+    width: 475px;
+    position: absolute;
+    z-index: -4;
+    bottom: -210px;
+    right: 150px;
+    border:none;
+    animation: LP4 5s ease;
+    animation-delay: 15s;
+}
+
+/* Fashion pagina */
+.fashion {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.fashion a {
+    width: 30%;
+}
+
+.fashion a img {
+    width: 100%;
+}
+
+.fashion a:hover {
+    border: 2px #ffe400 solid;
+}
+
+.fashion h1 {
+    color: white;
+    z-index: 10;
+    position: fixed;
+    bottom: 300px;
+    left: -215px;
+    transform: rotate(-90deg);
+}
+
+
+/* biografie pagina */
+article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 940px;
+    gap: 20px;
+    background-color: #222222;
+}
+
+article h1 {
+    line-height: 1;
+    color: #ffe400;
+    width: 390px;
+    position: absolute;
+    bottom: 1%;
+    left: 2%;
+    animation: textani 5s infinite;
+}
+
+article div {
+    width: 700px;
+}
+
+article img {
+    height: 97%;
+    box-shadow: 0 -15px 0 0 #ffe400;
+}
+
+article p {
+    padding: 0 0 20px 30px;
+}
+
+/* animations */
+
+@keyframes textani {
+    0%  {font-family: bd-micronfont, sans-serif;}
+    25% {font-family: hwt-mardell, sans-serif;}  
+    50% {font-family: felt-tip-roman, sans-serif;}
+    75% {font-family: azo-sans-uber, sans-serif;}
+    100%{font-family: bd-micronfont, sans-serif;}
+}
+
+@keyframes rondje {
+    0%      {transform: rotate(0deg);
+    }100%   {transform: rotate(360deg);}
+}
+
+@keyframes flip {
+    0%  { transform: rotateY(0deg);}
+    50% { transform: rotateY(360deg);}
+    100%{ transform: rotateY(0deg);}
+}
+
+@keyframes LP1 {
+    0%  { left: 150px; top: 80px; }
+    10% { left: 0; transform: rotate(0deg);}
+    90% { left: 0; transform: rotate(360deg);}
+    100%{ left: 150px; top: 80px;  transform: rotate(360deg)}
+    }
+
+@keyframes LP2 {
+    0%  { left: 150px; bottom: -210px;; }
+    10% { left: 0; transform: rotate(0deg);}
+    90% { left: 0; transform: rotate(360deg);}
+    100%{ left: 150px; bottom: -210px;  transform: rotate(360deg)}
+    }
+    
+@keyframes LP3 {
+    0%  { right: 150px; bottom: -210px;; }
+    10% { right: 0; transform: rotate(0deg);}
+    90% { right: 0; transform: rotate(360deg);}
+    100%{ right: 150px; bottom: -210px;  transform: rotate(360deg)}
+    }
+              
+@keyframes LP4 {
+    0%  { right: 150px; bottom: -210px;; }
+    10% { right: 0; transform: rotate(0deg);}
+    90% { right: 0; transform: rotate(360deg);}
+    100%{ right: 150px; bottom: -210px;  transform: rotate(360deg)}
+    }
